@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ComunidadVecinal.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ComunidadVecinal"
+    xmlns:views="clr-namespace:ComunidadVecinal.MVVM.Views"
+    xmlns:helpers="clr-namespace:ComunidadVecinal.Helpers"
+    NavBarIsVisible="true"
+    Shell.ForegroundColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
+    FlyoutBackgroundColor="{AppThemeBinding Light={StaticResource Primarylight}, Dark={StaticResource Primarylight}}"
+    TitleColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
+    Title="ComunidadVecinal">
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout Padding="0" BackgroundColor="{StaticResource PrimaryDark}">
+            <Grid ColumnDefinitions=".4*,.6*" RowDefinitions="*,30,30,*" VerticalOptions="End">
+                <ImageButton Source="cvlogo.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"  VerticalOptions="Start" HorizontalOptions="Start" />
+                <Label FontSize="36" FontAttributes="Bold" Margin="20,0,10,0" FontFamily="" Text="Comunidad Vecinal" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalTextAlignment="End"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+
+    <ShellContent Title="Inicio" ContentTemplate="{DataTemplate local:Inicio}" Route="Inicio" >
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="Icons" Color="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Glyph="{x:Static helpers:IconFont.Home}"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
+    <ShellContent Title="Turno de limpieza" ContentTemplate="{DataTemplate views:TurnoLimpieza}" Route="TurnoLimpieza" >
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="Icons" Color="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Glyph="{x:Static helpers:IconFont.Cleaning_services}"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
+
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout>
+            <Label FontSize="Medium" Text="© 2024 Iván Ponce" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Margin="0,0,0,5" />
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+</Shell>

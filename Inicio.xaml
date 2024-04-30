@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComunidadVecinal.Inicio">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <!-- Imagen de fondo -->
+        <Image Source="cvlogo.png" Aspect="AspectFill" />
+
+        <!-- Contenedor para el texto y diseño superpuesto -->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="20">
+            <!-- Texto de bienvenida -->
+            <Label Text="¡Bienvenidos a Nuestra Comunidad!"
+                       FontSize="24"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,0,0,30" />
+
+            <!-- Descripción de la comunidad -->
+            <Label Text="Tu plataforma para gestionar la comunidad de vecinos."
+                       FontSize="18"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+            
+            <!-- Descripción de la comunidad -->
+            <Label Margin="0,30,0,0" Text="En este momento está en construcción, pero, podemos tener la lísta de limpieza un poco mas facil para todos."
+                       FontSize="18"
+                       TextColor="{StaticResource Gray300}"
+                       HorizontalTextAlignment="Center" VerticalOptions="EndAndExpand" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
