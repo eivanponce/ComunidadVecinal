@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComunidadVecinal.MVVM.Views.Transaccion"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White"
+             Title="Transacción">
+    <Grid RowDefinitions=".15*,.20*,.35*,.30*">
+        <RoundRectangle Grid.RowSpan="2" StyleClass="TopRectangle" />
+        <VerticalStackLayout StyleClass="Header">
+            <Label StyleClass="HeaderSubTitle" Text="Añadir transacción" VerticalOptions="Start" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <Grid Grid.Row="1" Grid.RowSpan="2" StyleClass="BalanceGrid">
+            <RoundRectangle  StyleClass="BalanceRectangle" />
+            <VerticalStackLayout Spacing="10" StyleClass="Padding25">
+                <Label Text="Descripcion" />
+                <Frame StyleClass="FrameBorder">
+                    <Entry Text="{Binding Transaccion.Descripcion}"></Entry>
+                </Frame>
+
+                <Label StyleClass="Margin15" Text="Cantidad"  />
+                <Frame StyleClass="FrameBorder">
+                    <Entry  Text="{Binding Transaccion.Cantidad}" VerticalOptions="Center" Keyboard="Numeric"></Entry>
+                </Frame>
+
+                <Label StyleClass="Margin15" Text="Fecha"  />
+                <Frame StyleClass="FrameBorder">
+                    <DatePicker Date="{Binding Transaccion.Fecha}"></DatePicker>
+                </Frame>
+                <HorizontalStackLayout VerticalOptions="StartAndExpand" >
+                    <Label Text="¿Es un ingreso?" VerticalOptions="Center"  />
+                    <CheckBox IsChecked="{Binding Transaccion.EsIngreso}" Color="{StaticResource MainColor}"/>
+                </HorizontalStackLayout>
+
+                <Grid ColumnDefinitions=".50*,.50*" ColumnSpacing="5"  >
+                    <Button StyleClass="Margin15" Text="Guardar" TextColor="Black" x:Name="guardar" Clicked="guardar_Clicked" />
+                    <Button Grid.Column="1" StyleClass="Margin15, RedControl" Text="Cancelar" TextColor="Black" x:Name="cancelar"  Clicked="cancelar_Clicked"/>
+                </Grid>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

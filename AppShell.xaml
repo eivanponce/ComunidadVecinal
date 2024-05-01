@@ -7,16 +7,17 @@
     xmlns:views="clr-namespace:ComunidadVecinal.MVVM.Views"
     xmlns:helpers="clr-namespace:ComunidadVecinal.Helpers"
     NavBarIsVisible="true"
-    Shell.ForegroundColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-    FlyoutBackgroundColor="{AppThemeBinding Light={StaticResource Primarylight}, Dark={StaticResource Primarylight}}"
-    TitleColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
+    Shell.ForegroundColor="{StaticResource Black}"
+    Shell.BackgroundColor="{StaticResource Primary}"
+    FlyoutBackgroundColor="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Tertiary}}"
+    TitleColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource Black}}"
     Title="ComunidadVecinal">
 
     <Shell.FlyoutHeader>
-        <VerticalStackLayout Padding="0" BackgroundColor="{StaticResource PrimaryDark}">
-            <Grid ColumnDefinitions=".4*,.6*" RowDefinitions="*,30,30,*" VerticalOptions="End">
-                <ImageButton Source="cvlogo.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"  VerticalOptions="Start" HorizontalOptions="Start" />
-                <Label FontSize="36" FontAttributes="Bold" Margin="20,0,10,0" FontFamily="" Text="Comunidad Vecinal" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalTextAlignment="End"/>
+        <VerticalStackLayout Padding="0" BackgroundColor="{StaticResource Primary}">
+            <Grid ColumnDefinitions=".4*,.6*" RowDefinitions="*" VerticalOptions="End">
+                <ImageButton Source="cvlogo.png" Aspect="AspectFit" HeightRequest="200" WidthRequest="200"  VerticalOptions="Start" HorizontalOptions="Start" Margin="-10,30" />
+                <Label FontSize="36" FontAttributes="Bold" Margin="20,0,10,0" FontFamily="" Text="Comunidad Vecinal" TextColor="{StaticResource Black}" Grid.ColumnSpan="2" VerticalOptions="Start" HorizontalTextAlignment="End"/>
             </Grid>
         </VerticalStackLayout>
     </Shell.FlyoutHeader>
@@ -30,6 +31,11 @@
     <ShellContent Title="Turno de limpieza" ContentTemplate="{DataTemplate views:TurnoLimpieza}" Route="TurnoLimpieza" >
         <ShellContent.Icon>
             <FontImageSource FontFamily="Icons" Color="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Glyph="{x:Static helpers:IconFont.Cleaning_services}"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
+    <ShellContent Title="Banca personal" ContentTemplate="{DataTemplate views:Banco}" Route="Banco" >
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="Icons" Color="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" Glyph="{x:Static helpers:IconFont.Account_balance}"></FontImageSource>
         </ShellContent.Icon>
     </ShellContent>
 
