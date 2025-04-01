@@ -24,7 +24,7 @@
                        HorizontalTextAlignment="Center" />
             
             <!-- Descripción de la comunidad -->
-            <Label Margin="0,30,0,0" Text="En este momento está en construcción, pero, podemos tener la lísta de limpieza un poco mas facil para todos."
+            <Label Margin="0,30,0,0" Text="En este momento está en construcción, pero podemos hacer la lista de limpieza un poco más fácil para todos."
                        FontSize="18"
                        TextColor="{StaticResource Gray300}"
                        HorizontalTextAlignment="Center" VerticalOptions="EndAndExpand" />

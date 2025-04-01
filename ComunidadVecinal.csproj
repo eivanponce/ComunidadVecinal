@@ -43,50 +43,50 @@
 	  <RunAOTCompilation>False</RunAOTCompilation>
 	  <PublishTrimmed>False</PublishTrimmed>
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android34.0|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>Comunidad Vecinal</ApplicationTitle>
-	  <ApplicationVersion>2</ApplicationVersion>
-	  <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>3</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
