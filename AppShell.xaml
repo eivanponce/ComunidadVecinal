@@ -42,7 +42,7 @@
 
     <Shell.FlyoutFooter>
         <VerticalStackLayout>
-            <Label FontSize="Medium" Text="© 2024 Iván Ponce" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Margin="0,0,0,5" />
+            <Label FontSize="Medium" Text="© 2025 Softolont" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Margin="0,0,0,5" />
         </VerticalStackLayout>
     </Shell.FlyoutFooter>
 </Shell>
